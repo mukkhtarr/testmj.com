@@ -27,18 +27,18 @@ const getConfig = () => {
 
   const defaultDomain = config.build.host_name;
   const DOMAIN = process.env.DOMAIN || defaultDomain;
-  config.build.host_name = DOMAIN; //"cannabis.ca.gov";
+  config.build.host_name = DOMAIN; //"testmj.com";
 
   if (process.env.SITE_ENV === "production") {
-    config.build.canonical_site_url = "https://cannabis.ca.gov";
+    config.build.canonical_site_url = "https://testmj.com";
   }
 
   if (process.env.SITE_ENV === "headless") {
-    config.build.canonical_site_url = "https://headless.cannabis.ca.gov";
+    config.build.canonical_site_url = "https://headless.testmj.com";
   }
 
   if (process.env.SITE_ENV === "staging") {
-    config.build.canonical_site_url = "https://staging.cannabis.ca.gov";
+    config.build.canonical_site_url = "https://staging.testmj.com";
   }
 
   if (process.env.SITE_ENV === "localhost") {

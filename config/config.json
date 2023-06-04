@@ -1,13 +1,13 @@
 {
     "version": "2.0.0",
-    "name": "cannabis.ca.gov - Department of Cannabis Control",
-    "gitrepo": "@cagov/cannabis.ca.gov",
+    "name": "testmj.com - Department of Cannabis Control",
+    "gitrepo": "mukkhtarr/testmj.com",
     "contact": {
-        "maintainer": "Office of Data and Innovation"
+        "maintainer": "mukkhtarr"
     },
     "page_metadata": {
         "en": {
-            "site_url": "https://cannabis.ca.gov",
+            "site_url": "https://testmj.com",
             "site_name": "Department of Cannabis Control",
             "site_default_description": "Learn about California cannabis laws and licenses",
             "page_default_open_graph_image_url": "/wp-content/uploads/sites/2/2021/07/cropped-Cannabis_horizontal_social-1.png",
@@ -42,37 +42,37 @@
         "upload_folder": "wp-content/uploads/",
         "upload_folder_flywheel": "wp-content/uploads/sites/2/",
         "replace_urls": [
-            "http://cannabis.ca.gov",
-            "https://headless.cannabis.ca.gov",
-            "https://staging.cannabis.ca.gov",
-            "https://cannabis.ca.gov",
-            "https://live-cannabis-ca-gov.pantheonsite.io",
+            "http://testmj.com",
+            "https://headless.testmj.com",
+            "https://staging.testmj.com",
+            "https://testmj.com",
+            "https://live-testmj-com.pantheonsite.io",
             "https://test-cannabis-ca-gov.pantheonsite.io",
             "https://dev-cannabis-ca-gov.pantheonsite.io",
-            "https://api.cannabis.ca.gov",
+            "https://api.testmj.com",
             "https://dev-cagov-dcc.pantheonsite.io",
             "http://wordpress.test:8888"
         ],
         "media_replace_urls": [
-            "http://cannabis.ca.gov/wp-content/uploads/",
-            "https://cannabis.ca.gov/wp-content/uploads/sites/2/",
-            "https://cannabis.ca.gov/wp-content/uploads/",
-            "https://api.cannabis.ca.gov/wp-content/uploads/sites/2/",
-            "https://api.cannabis.ca.gov/wp-content/uploads/",
-            "https://headless.cannabis.ca.gov/wp-content/uploads/sites/2/",
-            "https://headless.cannabis.ca.gov/wp-content/uploads/",
-            "https://staging.cannabis.ca.gov/wp-content/uploads/sites/2/",
-            "https://staging.cannabis.ca.gov/wp-content/uploads/",
+            "http://testmj.com/wp-content/uploads/",
+            "https://testmj.com/wp-content/uploads/sites/2/",
+            "https://testmj.com/wp-content/uploads/",
+            "https://api.testmj.com/wp-content/uploads/sites/2/",
+            "https://api.testmj.com/wp-content/uploads/",
+            "https://headless.testmj.com/wp-content/uploads/sites/2/",
+            "https://headless.testmj.com/wp-content/uploads/",
+            "https://staging.testmj.com/wp-content/uploads/sites/2/",
+            "https://staging.testmj.com/wp-content/uploads/",
             "http://localhost:8080/wp-content/uploads/sites/2/",
             "http://localhost:8080/wp-content/uploads/",
-            "https://live-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
+            "https://live-testmj-com.pantheonsite.io/wp-content/uploads/",
             "https://test-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
             "https://dev-cannabis-ca-gov.pantheonsite.io/wp-content/uploads/",
             "https://dev-cagov-dcc.pantheonsite.io/wp-content/uploads/",
             "http://wordpress.test:8888/wp-content/uploads/"
         ],
-        "editor_url": "https://api.cannabis.ca.gov",
-        "canonical_site_url": "https://cannabis.ca.gov",
-        "host_name": "headless.cannabis.ca.gov"
+        "editor_url": "https://api.testmj.com",
+        "canonical_site_url": "https://testmj.com",
+        "host_name": "headless.testmj.com"
     }
 }

@@ -1,13 +1,13 @@
-# cannabis.ca.gov
+# testmj.com
 
 ## Project description
-Production instance of [cannabis.ca.gov](https://cannabis.ca.gov) for the Department of Cannabis Control (DCC). 
+Production instance of [testmj.com](https://testmj.com) for the Department of Cannabis Control (DCC). 
 * Built to deliver plain-language, performant, accessible information.
 
 ## How our static publishing system works
 ### 1. Edit content
-* Content is created and edited by DCC staff in a WordPress instance hosted by Pantheon at [api.cannabis.ca.gov](https://api.cannabis.ca.gov/).
-* All media are uploaded to the /wp-content/uploads/ directory of a static S3 bucket on AWS, and read via the Cloudfront CDN from the domain [cannabis.ca.gov](https://cannabis.ca.gov). This same bucket and cloudfront distribution are used for delivering the static website, which is updated as part of the publishing process, described below.  Media offloading is provided via the Wordpress plugin *WP Media Media* by [Delicious Brains](https://deliciousbrains.com/)
+* Content is created and edited by DCC staff in a WordPress instance hosted by Pantheon at [api.testmj.com](https://api.testmj.com/).
+* All media are uploaded to the /wp-content/uploads/ directory of a static S3 bucket on AWS, and read via the Cloudfront CDN from the domain [testmj.com](https://testmj.com). This same bucket and cloudfront distribution are used for delivering the static website, which is updated as part of the publishing process, described below.  Media offloading is provided via the Wordpress plugin *WP Media Media* by [Delicious Brains](https://deliciousbrains.com/)
 
 ### 2. Sync content to static content repo
 * After posts are edited, a notification is fired off, and an AWS Lambda [syncing service](https://github.com/cagov/cannabis-ca-gov-lambda-sync-github) pulls data from WordPress through the WordPress REST API.  Notifications are produced using the Wordpress plugin *Notifications* from [BracketSpace](https://bracketspace.com/).
@@ -36,7 +36,7 @@ We use [GitHub Actions](https://docs.github.com/en/actions) workflows to manage 
 * `npm run dev` for local builds.
 * `npm build` to generate static repo at `./docs`. You can also run `http-server` or `serve` to view this site in a local web server.
 * `npm run content:clean` and `npm run content:update` will get the latest content changes and reset content.
-* You can work locally with the markup generated from https://api.cannabis.ca.gov editor. 
+* You can work locally with the markup generated from https://api.testmj.com editor. 
 * [NOT YET RE-RELEASED]: `npm test` - run playwright tests.
 * Check the [CHANGELOG](CHANGELOG.md), [ROADMAP](ROADMAP.md) for additional information.
 
@@ -57,7 +57,7 @@ We use [GitHub Actions](https://docs.github.com/en/actions) workflows to manage 
 * If a public issue trail is desired, we recommend creating tickets for concrete code tasks that pertain to the code, and linking the issue in any all team internal tracking tools.
 
 ### Troubleshooting
-* Check the status of [GitHub Actions](https://github.com/cagov/cannabis.ca.gov/actions) to see if the site built.
+* Check the status of [GitHub Actions](https://github.com/cagov/testmj.com/actions) to see if the site built.
 * Check status of [AWS](https://health.aws.amazon.com/health/status), [Github](https://www.githubstatus.com/)
 * Please refer to https://github.com/cagov/static-content-cannabis for more detailed technical notes on how the publishing system is built.
 
@@ -89,7 +89,7 @@ Examples:
 Office of Digital Innovation (ODI), is working with the Department of Cannabis Control (DCC), Department of Consumer Affairs (DCA), and the California Department of Technology (CDT) to bring content strategy, user-centered design and performant web publishing on an open-source stack for DCC.
 
 * Project docs: Coda and Google Drive
-* Report an issue: https://github.com/cagov/cannabis.ca.gov
+* Report an issue: https://github.com/cagov/testmj.com
 * Project board: Internal board is in Coda
 * Public board: Would move to the GitHub board relative to this GitHub repository.
 * Project maintainer & Lead Engineer: Jim Bumgardner @jbum; Alum: Chach Sikes (she/her) @chachasikes

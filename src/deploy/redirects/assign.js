@@ -13,7 +13,7 @@ redirectFile.redirects.forEach((redirect) => {
   s3.putObject(
     {
       Body: "",
-      Bucket: "cannabis.ca.gov",
+      Bucket: "testmj.com",
       Key:
         redirect.url.indexOf("/") === 0
           ? redirect.url.substring(1)

@@ -31,11 +31,11 @@
 
 6. Commit changes
 
-7. Replace previous js bundle (ei 1.0.8) with and new js bundle (ei 1.0.9) through [WordPress UI > CAWeb Options > Custom JS](https://api.cannabis.ca.gov/wp-admin/admin.php?page=caweb_options)
+7. Replace previous js bundle (ei 1.0.8) with and new js bundle (ei 1.0.9) through [WordPress UI > CAWeb Options > Custom JS](https://api.testmj.com/wp-admin/admin.php?page=caweb_options)
 
-8. Replace csv in the [WordPress Media Library](https://api.cannabis.ca.gov/wp-admin/post.php?post=9697&action=edit) In order to cache bust, upload a file with a new name.
+8. Replace csv in the [WordPress Media Library](https://api.testmj.com/wp-admin/post.php?post=9697&action=edit) In order to cache bust, upload a file with a new name.
 
-9. Update tracker boxes [WordPress UI - Where cannabis businesses are allowed](https://api.cannabis.ca.gov/wp-admin/post.php?post=9654&action=edit)
+9. Update tracker boxes [WordPress UI - Where cannabis businesses are allowed](https://api.testmj.com/wp-admin/post.php?post=9654&action=edit)
 
 ---
 
@@ -60,9 +60,9 @@ Assets uploaded to WordPress include:
 
 ## Building a bundle
 
-- Check out [`@cagov/cannabis.ca.gov`](https://github.com/cagov/cannabis.ca.gov) repo
+- Check out [`@cagov/testmj.com`](https://github.com/cagov/testmj.com) repo
 - Run `npm install`; node version v14.17.0.
-- Go to the [root](https://github.com/cagov/cannabis.ca.gov/tree/main/src/js/charts/cannabis-local-ordinances) of the data viz project:
+- Go to the [root](https://github.com/cagov/testmj.com/tree/main/src/js/charts/cannabis-local-ordinances) of the data viz project:
     `cd src/js/charts/cannabis-local-ordinances`
 - Update `package.json`, bump version number and update the bundle number in `scripts` > `build:bundle`
     - Make sure you run `npm install` at root and also at root of `src/js/combobox-places` -
@@ -73,10 +73,10 @@ Assets uploaded to WordPress include:
 - For CSS changes
     - Make changes in `_monolith/cannabis-local-ordinances.css`
 - **Manually test** the changes in the WordPress staging environment on Pantheon
-    - Log in to: api.cannabis.ca.gov
+    - Log in to: api.testmj.com
         - Request access from [Office of Digital Innovation](https://digital.ca.gob) Engineering team.
-    - Upload files in theme settings at [https://api.cannabis.ca.gov/wp-admin/admin.php?page=caweb_options](https://api.cannabis.ca.gov/wp-admin/admin.php?page=caweb_options) under JS and CSS (as needed).    
-    - Ensure that the theme version enabled matches production (currently CAWeb 1.6.2, [cannabis.ca.gov](http://cannabis.ca.gov) website. Contact CAWeb publishing if you have any questions.
+    - Upload files in theme settings at [https://api.testmj.com/wp-admin/admin.php?page=caweb_options](https://api.testmj.com/wp-admin/admin.php?page=caweb_options) under JS and CSS (as needed).    
+    - Ensure that the theme version enabled matches production (currently CAWeb 1.6.2, [testmj.com](http://testmj.com) website. Contact CAWeb publishing if you have any questions.
     - Note that the Divi dependency was patched and disconnected for [Pantheon staging environment](https://github.com/cagov/pantheon-mirror-cannabis-ca-gov/pull/new/caweb_publishing_clone). 
         - Files in this clone need to be publishing to `master` branch and pushed into Pantheon git environment in order to actually deploy code to server. 
     - Ensure that the Gutenberg blocks & other ODI or Design System publishing features are set to whatever code matches the production environment.

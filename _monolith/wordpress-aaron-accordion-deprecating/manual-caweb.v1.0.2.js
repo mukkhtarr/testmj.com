@@ -21,7 +21,7 @@ if (!mobileView()) {
     }
 });
 // Insert web component bundle for client side web components like accordion
-// Compiled here: https://github.com/cagov/cannabis.ca.gov/blob/main/src/js/index.js
+// Compiled here: https://github.com/cagov/testmj.com/blob/main/src/js/index.js
 // Used for development while updating external bundles.
 let newScript = document.createElement("script");
 
@@ -29,7 +29,7 @@ newScript.type = "module";
 newScript.src = "https://files.covid19.ca.gov/js/components/bundle/v2/index.min.js";
 document.querySelector('head').appendChild(newScript);
 // Temporary logo replacement until moved to code option.
-$(".logo-small").prepend('<a href="/"><img src="https://cannabis.ca.gov/wp-content/uploads/sites/2/2021/06/logo_square.png" alt="Department of Cannabis Control Icon" /></a>').css('background-color', '#FFF');
+$(".logo-small").prepend('<a href="/"><img src="https://testmj.com/wp-content/uploads/sites/2/2021/06/logo_square.png" alt="Department of Cannabis Control Icon" /></a>').css('background-color', '#FFF');
 
 // Adding return to top
 var $returnTop = $('<span class="return-top"/>').appendTo('.main-content-ds');
@@ -82,7 +82,7 @@ var externalLink = document.querySelectorAll(".container .row .col-lg-10 a");
 for (var i = 0; i < externalLink.length; i++) {
   var anchorLink = externalLink[i].href.indexOf("#") > -1;
   var localHost = externalLink[i].href.indexOf("localhost") > -1;
-  var localUrl = externalLink[i].href.indexOf("cannabis.ca.gov") > -1;
+  var localUrl = externalLink[i].href.indexOf("testmj.com") > -1;
   var localEmail = externalLink[i].href.indexOf("@") > -1;
   if (link_is_external(externalLink[i]) && !localUrl && !localHost && !anchorLink && !localEmail) {
     externalLink[i].innerHTML += ext; // += concatenates to external links

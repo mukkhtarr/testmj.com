@@ -1,4 +1,4 @@
-// Github: https://github.com/cagov/cannabis.ca.gov/src/js/charts/cannabis-local-ordinances/utilities/airtable-to-html-table/index.js"
+// Github: https://github.com/cagov/testmj.com/src/js/charts/cannabis-local-ordinances/utilities/airtable-to-html-table/index.js"
 
 // Set up an object for the field.
 const field = (field) => {

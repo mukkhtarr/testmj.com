@@ -1,7 +1,7 @@
 name: 11ty build Staging Site
-# site:  https://staging.cannabis.ca.gov
-# s3 bucket http://staging.cannabis.ca.gov.s3-website-us-west-1.amazonaws.com/
-# editor: https://api.cannabis.ca.gov
+# site:  https://staging.testmj.com
+# s3 bucket http://staging.testmj.com.s3-website-us-west-1.amazonaws.com/
+# editor: https://api.testmj.com
 on:
   workflow_run:
     workflows: ["Update static content [staging]"]
@@ -31,7 +31,7 @@ jobs:
           npm ci --production
       - name: Build 11ty
         run: |
-          SITE_ENV=staging DOMAIN=staging.cannabis.ca.gov npm run build
+          SITE_ENV=staging DOMAIN=staging.testmj.com npm run build
       - name: Write robots.txt
         run: |
           echo 'User-agent: *' > docs/robots.txt
@@ -52,8 +52,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
 
-      - name: Deploy to S3 (staging.cannabis.ca.gov)
-        run: aws s3 sync --follow-symlinks --delete ./docs s3://staging.cannabis.ca.gov --exclude 'wp-content/uploads/*'
+      - name: Deploy to S3 (staging.testmj.com)
+        run: aws s3 sync --follow-symlinks --delete ./docs s3://staging.testmj.com --exclude 'wp-content/uploads/*'
 
       # Reset the cache-control headers on static assets on S3 bucket
       - name: Reset cache-control on static files
@@ -63,7 +63,7 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: 'us-west-1'   # optional: defaults to us-east-1
           source: './docs/fonts'
-          dest: 's3://staging.cannabis.ca.gov/fonts'
+          dest: 's3://staging.testmj.com/fonts'
           flags: --recursive --cache-control max-age=15552000
       - name: Reset cache-control on assets
         uses: prewk/s3-cp-action@v2
@@ -72,7 +72,7 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: 'us-west-1'   # optional: defaults to us-east-1
           source: './docs/assets'
-          dest: 's3://staging.cannabis.ca.gov/assets'
+          dest: 's3://staging.testmj.com/assets'
           flags: --recursive --cache-control max-age=15552000
 
 
@@ -81,5 +81,5 @@ jobs:
       #    AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} npm run deploy:redirects
 
       # Invalidate Cloudfront production distribution
-      - name: Invalidate Cloudfront (cannabis.ca.gov)
+      - name: Invalidate Cloudfront (testmj.com)
         run: aws cloudfront create-invalidation --distribution-id EQTK6QDHAMA8Z --paths "/*"

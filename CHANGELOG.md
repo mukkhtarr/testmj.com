@@ -1,4 +1,4 @@
-# CHANGELOG for cannabis.ca.gov
+# CHANGELOG for testmj.com
 
 # 2.0.0 - _-__-____
 * Move off of hybrid production release.
@@ -11,7 +11,7 @@
 * Clean up
 
 # 1.1.2 - 12-22-2021
-* Connect to api.cannabis.ca.gov
+* Connect to api.testmj.com
 * Components synced up with design system
 * Cypress removed (we are using playwright now, old docs moved to `_maintenance`
 
@@ -53,16 +53,16 @@ Board: @DOCS
 
 # 1.0.0-rc
 From [Office of Digital Innovation](https://digital.ca.gov), October 1, 2021
-* Prepare cannabis.ca.gov static generated site ("headless") for initial launch. 
+* Prepare testmj.com static generated site ("headless") for initial launch. 
 * Data comes from former WordPress monolith site (🏔).
-* Github issues: https://github.com/cagov/cannabis.ca.gov
+* Github issues: https://github.com/cagov/testmj.com
 * Add cypress tests
 * Start meeting about testing frameworks.
 * Create ODI Engineering Codeshare Fridays and start team presentations about testing and publishing systems. 
 
 # 0.0.1
 From [Office of Digital Innovation](https://digital.ca.gov) & [CAWeb publishing](https://caweb.cdt.ca.gov/), July 2021 @DOCS
-* Launch initial cannabis.ca.gov (🍃) for the [Department of Cannabis Control](https://cannabis.ca.gov) website on [CAWeb](https://caweb.cdt.ca.gov/) publishing [Flywheel](https://getflywheel.com/) instance.
+* Launch initial testmj.com (🍃) for the [Department of Cannabis Control](https://testmj.com) website on [CAWeb](https://caweb.cdt.ca.gov/) publishing [Flywheel](https://getflywheel.com/) instance.
 * @DOCS Can we include a reference link here about the project.
 * Write a WordPress [plugin](https://github.com/ca-design-system-gutenberg-blocks) to act as a bridge between current monolith sites and a decoupled architecture. (<@DOCS>) 
 * ODI uses the built-in WordPress REST API to develop fast loading, light, performant, accessible site. This site is similar in structure to how ODI built the [covid19](https://covid19.ca.gov) (created by the team who developed and maintained this site from March 2020 until the present). 

@@ -113,7 +113,7 @@ module.exports = function eleventyBuild(eleventyConfig) {
       }
 
       // Replace any domain from replace list with the canonical url for the current build.
-      // For this cannabis.ca.gov instance, there are multiple URL sources coming from different backend systems
+      // For this testmj.com instance, there are multiple URL sources coming from different backend systems
       config.build.replace_urls.forEach((rootPath) => {
         if (html !== undefined && html.includes(rootPath) && !html.includes('wp-content/uploads')) {
           html = html.replace(

@@ -1,6 +1,6 @@
 # Cannabis Local Ordinances
 
-The Cannabis Local Ordinances data visualization can be viewed at [https://cannabis.ca.gov/cannabis-laws/where-cannabis-businesses-are-allowed/](https://cannabis.ca.gov/cannabis-laws/where-cannabis-businesses-are-allowed/)/
+The Cannabis Local Ordinances data visualization can be viewed at [https://testmj.com/cannabis-laws/where-cannabis-businesses-are-allowed/](https://testmj.com/cannabis-laws/where-cannabis-businesses-are-allowed/)/
 
 ## Project goals
 

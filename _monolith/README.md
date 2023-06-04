@@ -1,4 +1,4 @@
-These are files that are used on the Flywheel "monolith" cannabis.ca.gov production site.
+These are files that are used on the Flywheel "monolith" testmj.com production site.
 
 ## Files used on production
 
@@ -13,7 +13,7 @@ The other files here are archival in case we need to pull Aaron or Konstantin ba
 
 ## Update process
 
-Go to: https://api.cannabis.ca.gov/wp-admin/admin.php?page=caweb_options
+Go to: https://api.testmj.com/wp-admin/admin.php?page=caweb_options
 
 **Tabs**
 Go to:
@@ -32,4 +32,4 @@ Every once it a while the cache may get stuck, in which case, you can add anothe
 
 
 ## Updating data viz
-To update the data viz, get the latest numbered version bundle from: https://github.com/cagov/cannabis.ca.gov/tree/main/src/js/charts/cannabis-local-ordinances/build.
+To update the data viz, get the latest numbered version bundle from: https://github.com/cagov/testmj.com/tree/main/src/js/charts/cannabis-local-ordinances/build.
