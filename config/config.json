@@ -43,9 +43,10 @@
         "upload_folder_flywheel": "wp-content/uploads/sites/2/",
         "replace_urls": [
             "http://testmj.com",
+            "https://testmj.com",
+            "https://api.cannabis.ca.gov",
             "https://headless.testmj.com",
             "https://staging.testmj.com",
-            "https://testmj.com",
             "https://live-testmj-com.pantheonsite.io",
             "https://test-cannabis-ca-gov.pantheonsite.io",
             "https://dev-cannabis-ca-gov.pantheonsite.io",
@@ -71,7 +72,7 @@
             "https://dev-cagov-dcc.pantheonsite.io/wp-content/uploads/",
             "http://wordpress.test:8888/wp-content/uploads/"
         ],
-        "editor_url": "https://api.testmj.com",
+        "editor_url": "https://live-testmj-com.pantheonsite.io",
         "canonical_site_url": "https://testmj.com",
         "host_name": "headless.testmj.com"
     }
