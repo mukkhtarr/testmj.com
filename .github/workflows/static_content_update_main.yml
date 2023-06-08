@@ -21,7 +21,7 @@ jobs:
       - run: npm ci --production
       - name: Check for static content updates # update static content repo.
         run: |
-          npm update static-content-cannabis --production
+          npm update static-content-testmj --production
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
         id: cpr
         uses: peter-evans/create-pull-request@v4
@@ -31,7 +31,7 @@ jobs:
           base: main
           title: "Static content update to main branch"
           body: |
-           Method: api.testmj.com (WordPress REST API, Pantheon) > @cagov/cannabis-lambda-sync-github (AWS CloudFormation, arc.codes) > @cagov/static-content-cannabis (Static content repo, main branch)
+           Method: live-testmj-com.pantheonsite.io (WordPress REST API, Pantheon) > @cagov/testmj-lambda-sync-github (AWS CloudFormation, arc.codes) > @cagov/static-content-testmj (Static content repo, main branch)
           labels: |
             content-update
             automerge
