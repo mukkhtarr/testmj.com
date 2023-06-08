@@ -31,7 +31,7 @@ jobs:
           base: main
           title: "Static content update to main branch"
           body: |
-           Method: live-testmj-com.pantheonsite.io (WordPress REST API, Pantheon) > @cagov/testmj-lambda-sync-github (AWS CloudFormation, arc.codes) > @cagov/static-content-testmj (Static content repo, main branch)
+           Method: live-testmj-com.pantheonsite.io (WordPress REST API, Pantheon) > @mukkhtarr/testmj-lambda-sync-github (AWS CloudFormation, arc.codes) > @mukkhtarr/static-content-testmj (Static content repo, main branch)
           labels: |
             content-update
             automerge
