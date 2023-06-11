@@ -1,7 +1,7 @@
 name: 11ty build Staging Site
 # site:  https://staging.testmj.com
 # s3 bucket http://staging.testmj.com.s3-website-us-west-1.amazonaws.com/
-# editor: https://api.testmj.com
+# editor: live-testmj-com.pantheonsite.io
 on:
   workflow_run:
     workflows: ["Update static content [staging]"]
@@ -40,7 +40,7 @@ jobs:
       - name: Deploy to github pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ODI_GITHUB_TOKEN }}
           publish_dir: ./docs
           publish_branch: deploy_staging
 
@@ -82,4 +82,4 @@ jobs:
 
       # Invalidate Cloudfront production distribution
       - name: Invalidate Cloudfront (testmj.com)
-        run: aws cloudfront create-invalidation --distribution-id EQTK6QDHAMA8Z --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id E1TQWHSFZM6WRI --paths "/*"
