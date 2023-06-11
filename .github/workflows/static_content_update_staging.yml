@@ -47,7 +47,7 @@ jobs:
         if: ${{ steps.cpr.outputs.pull-request-number }}
         uses: hmarr/auto-approve-action@v2
         with:
-          github-token: ${{ secrets.ODI_GITHUB_TOKEN }}
+          github-token: ${{ secrets.PR_AUTO_APPROVE_USER }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
       - id: automerge
         if: ${{ steps.cpr.outputs.pull-request-number }}
