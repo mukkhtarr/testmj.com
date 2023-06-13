@@ -77,7 +77,7 @@
     "cheerio": "^1.0.0-rc.12",
     "cross-env": "^7.0.3",
     "aws-sdk": "^2.1270.0",
-    "static-content-cannabis": "github:cagov/static-content-cannabis#main",
-    "static-content-cannabis-staging": "github:cagov/static-content-cannabis#staging"
+    "static-content-cannabis": "github:mukkhtarr/static-content-testmj#main",
+    "static-content-cannabis-staging": "github:mukkhtarr/static-content-testmj#staging"
   }
 }
