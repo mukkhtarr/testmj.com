@@ -19,7 +19,7 @@ jobs:
           node-version: 16
           cache: 'npm'
       - run: npm ci --production
-      - name: Check for static content updates # update static content repo. 
+      - name: Check for static content updates (MAIN BRANCH WORKFLOW) # update static content repo. 
         run: |
           npm update static-content-cannabis-staging
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
