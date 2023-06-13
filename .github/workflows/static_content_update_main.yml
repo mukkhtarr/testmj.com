@@ -21,7 +21,7 @@ jobs:
       - run: npm ci --production
       - name: Check for static content updates # update static content repo.
         run: |
-          npm update static-content-testmj --production
+          npm update static-content-cannabis --production
       - name: Create Pull Request # https://github.com/marketplace/actions/create-pull-request
         id: cpr
         uses: peter-evans/create-pull-request@v4
