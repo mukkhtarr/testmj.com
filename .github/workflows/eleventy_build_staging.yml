@@ -3,6 +3,7 @@ name: 11ty build Staging Site
 # s3 bucket http://staging.testmj.com.s3-website-us-west-1.amazonaws.com/
 # editor: live-testmj-com.pantheonsite.io
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["Update static content [staging]"]
     types: ['completed']
