@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: n1hility/cancel-previous-runs@v2
         with: 
-          token: ${{ secrets.ODI_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@master
       - name: Use Node.js 16.x
         uses: actions/setup-node@v1
@@ -60,6 +60,6 @@ jobs:
         with:
           message: |
             Preview site available at [${{ env.URLSAFE_BRANCH_NAME }}.pr.testmj.com](https://${{ env.URLSAFE_BRANCH_NAME }}.pr.testmj.com/).
-          repo-token: ${{ secrets.ODI_GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: 'github-actions[bot]'
           allow-repeats: false
