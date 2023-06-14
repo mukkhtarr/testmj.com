@@ -26,7 +26,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ODI_GITHUB_TOKEN }}
           committer: ${{ secrets.ODI_GITHUB_USER }} <noreply@github.com> 
           base: main
           title: "Static content update to main branch"
@@ -47,11 +47,11 @@ jobs:
         if: ${{ steps.cpr.outputs.pull-request-number }}
         uses: hmarr/auto-approve-action@v2
         with:
-          github-token: ${{ secrets.PR_APPROVAL_TOKEN }}
+          github-token: ${{ secrets.PR_AUTO_APPROVE_USER }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
       - id: automerge
         if: ${{ steps.cpr.outputs.pull-request-number }}
         name: Auto merge static content update
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
-          GITHUB_TOKEN: "${{ secrets.PR_APPROVAL_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.ODI_GITHUB_TOKEN }}"
