@@ -27,7 +27,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.ODI_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           committer: ${{ secrets.ODI_GITHUB_USER }} <noreply@github.com> 
           base: staging
           title: "Static content update to staging branch"
