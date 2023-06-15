@@ -54,4 +54,4 @@ jobs:
         name: Auto merge static content update
         uses: "pascalgn/automerge-action@v0.15.3"
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.ODI_GITHUB_TOKEN }}"
