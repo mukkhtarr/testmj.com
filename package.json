@@ -10,7 +10,7 @@
     "site:build:staging": "cross-env SITE_ENV=staging DOMAIN=staging.testmj.com eleventy",
     "site:build:headless": "cross-env NODE_ENV=production SITE_ENV=headless DOMAIN=headless.testmj.com eleventy",
     "site:build:production": "cross-env NODE_ENV=production SITE_ENV=production DOMAIN=testmj.com eleventy",
-    "site:watch:dev": "cross-env NODE_ENV=development SITE_ENV=localhost eleventy --watch --serve --incremental",
+    "site:watch:dev": "cross-env NODE_ENV=development SITE_ENV=localhost eleventy --watch --serve --incremental --quiet",
     "site:watch:staging": "cross-env NODE_ENV=development SITE_ENV=staging eleventy --watch --serve --incremental",
     "site:watch": "eleventy --serve",
     "start": "npm run site:watch",
