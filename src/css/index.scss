@@ -153,7 +153,7 @@ ol.steps {
   .has-text-align-center {
       text-align: center;
   }
-  
+
   /* mukhtar css start */
 .printbtncls{
   float:right;
@@ -161,6 +161,10 @@ ol.steps {
 .printbtn{
   cursor:pointer;
 }
+.wp-block-query ul{
+  list-style-type:none;
+}
+.
 /* override styles when printing */
 @media print {
   // @page {
