@@ -5247,10 +5247,10 @@
       "Testing": "Prohibited",
       "Manufacturing": "Prohibited",
       "Cultivation": "Prohibited",
-      "Are all CCA activites prohibited?": "No",
+      "Are all CCA activites prohibited?": "Yes",
       "Is all retail prohibited?": "Yes",
       "CCA Prohibited by County": "",
-      "Updated": "2023-12-08"
+      "Updated": "2023-12-14"
    },
    "Los Alamitos": {
       "CA Places Key": "Los Alamitos",
@@ -8732,10 +8732,10 @@
       "Testing": "Allowed",
       "Manufacturing": "Allowed",
       "Cultivation": "Allowed",
-      "Are all CCA activites prohibited?": "Yes",
-      "Is all retail prohibited?": "Yes",
+      "Are all CCA activites prohibited?": "No",
+      "Is all retail prohibited?": "No",
       "CCA Prohibited by County": "",
-      "Updated": "2023-11-30"
+      "Updated": "2023-12-14"
    },
    "Tehama": {
       "CA Places Key": "Tehama",
