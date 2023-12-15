@@ -5842,10 +5842,10 @@
       "Testing": "Prohibited",
       "Manufacturing": "Prohibited",
       "Cultivation": "Prohibited",
-      "Are all CCA activites prohibited?": "Yes",
-      "Is all retail prohibited?": "Yes",
+      "Are all CCA activites prohibited?": "No",
+      "Is all retail prohibited?": "No",
       "CCA Prohibited by County": "",
-      "Updated": "2022-01-22"
+      "Updated": "2023-12-15"
    },
    "Jurupa Valley": {
       "CA Places Key": "Jurupa Valley",
